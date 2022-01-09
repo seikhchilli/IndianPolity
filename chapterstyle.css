@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.maincnt{
+    font-size: 19px;
+    background-color: #adb5bd;
+    width: 60%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #26292E;
+}
+
+h1{
+    color: #E58947;
+}
+
+.quest{
+    font-size: 17px;
+    margin-left: 5%;
+}
+
+p{
+    font-size: 19px;
+}
+
+
