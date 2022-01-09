@@ -8,16 +8,17 @@ body{
 }
 
 .maincnt{
-    font-size: 19px;
-    background-color: #adb5bd;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.15vw;
+    background-color: #e9ecef;
     width: 60%;
 }
 
 header{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     background-color: #26292E;
 }
 
@@ -25,25 +26,33 @@ h1{
     color: #E58947;
 }
 
-label{
-    font-size: 19px;
-}
 
 .quest{
+    font-size: 1.15vw;
     margin-left: 5%;
     margin-right: 1%;
 }
 
+input[type=radio] {
+    border: 0px;
+    height: 2vh;
+    width: 2vw;
+}
+
 
 @media only screen and (max-width: 1000px){
-    .maincnt{
-        width: auto;
-        font-size: 25px;
-    }
 
-    label{
-        font-size: 30px;
-        font-weight: 400;
+    .maincnt{
+        width: 100vw;
+        font-size: 1.15vh;
+    }
+    .quest{
+        font-size: 1.15vh;
+    }
+    input[type=radio] {
+        border: 0px;
+        height: 1.5vh;
+        width: 1.5vw;
     }
 }
 
