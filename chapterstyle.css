@@ -4,6 +4,7 @@ body{
     height: auto;
     display: flex;
     justify-content: center;
+    
 }
 
 .maincnt{
@@ -24,13 +25,26 @@ h1{
     color: #E58947;
 }
 
-.quest{
-    font-size: 17px;
-    margin-left: 5%;
+label{
+    font-size: 19px;
 }
 
-p{
-    font-size: 19px;
+.quest{
+    margin-left: 5%;
+    margin-right: 1%;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .maincnt{
+        width: auto;
+        font-size: 25px;
+    }
+
+    label{
+        font-size: 30px;
+        font-weight: 400;
+    }
 }
 
 

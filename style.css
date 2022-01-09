@@ -54,3 +54,15 @@ body{
     opacity: 1;
 
 }
+
+@media only screen and (max-width: 1000px) {
+    .btncontainer{
+        top: 20%;
+        width: 60%;
+    }
+
+    .chapter{
+        font-size: 35px;
+        margin: 15px;
+    }
+}
