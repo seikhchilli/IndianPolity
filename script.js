@@ -1,6 +1,6 @@
-const btncontainer = document.getElementsByClassName("btncontainer");
+const btncontainer = document.querySelector('div');
 
-let requestURL = 'https://github.com/seikhchilli/IndianPolity/blob/master/data.json';
+let requestURL = 'https://seikhchilli.github.io/indainPolitydb/';
 
 let request = new XMLHttpRequest();
 
