@@ -1,6 +1,10 @@
 const header = document.querySelector('header');
 const ol = document.querySelector('ol');
 const form = document.querySelector('form');
+const title = document.querySelector('title');
+
+var params = location.search.split('?')[1];
+var chpnum = parseInt(params.split('=')[1]);
 
 let requestURL = 'https://seikhchilli.github.io/indainPolitydb/';
 
@@ -15,17 +19,18 @@ request.onload = function() {
     const chapters = request.response;
     populateHeader(chapters);
     populateOl(chapters);
+    title.innerText = chapters['chapters'][chpnum]['name'];
 }
 
 function populateHeader(obj){
     const h1 = document.createElement('h1');
-    h1.textContent = obj['chapters'][0]['name'];
+    h1.textContent = obj['chapters'][chpnum]['name'];
 
     header.appendChild(h1);
 }
 
 function populateOl(obj){
-    const chp = obj['chapters'][0]['questions'];
+    const chp = obj['chapters'][chpnum]['questions'];
     for (let i = 0; i < chp.length; i++){
         const li = document.createElement('li');
 
@@ -61,7 +66,7 @@ var btn1 = document.querySelector('button');
 
 form.addEventListener("submit", function(event) {
     const db = request.response;
-    var ques = db['chapters'][0]['questions'];
+    var ques = db['chapters'][chpnum]['questions'];
     var data = new FormData(form);
     var result = 0;
     for (const entry of data) {

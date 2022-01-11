@@ -20,7 +20,7 @@ function populateButtons(obj){
         const btn = document.createElement('button');
         btn.className = "chapter";
         btn.onclick = function(){
-            location.href = 'chapter1.html';
+            location.href = 'chapter.html?id=' + i.toString();
         };
         btn.textContent = chps[i]['name'];
     
