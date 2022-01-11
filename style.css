@@ -1,7 +1,9 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #171721;
+    background-image: url("IndianPolitybg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     position: relative;
@@ -65,4 +67,5 @@ body{
         font-size: 35px;
         margin: 15px;
     }
+
 }

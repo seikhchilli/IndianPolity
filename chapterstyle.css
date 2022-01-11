@@ -74,6 +74,10 @@ section{
         height: 1.5vh;
         width: 1.5vw;
     }
+
+    label{
+        font-size: 1.35vh;
+    }
 }
 
 
