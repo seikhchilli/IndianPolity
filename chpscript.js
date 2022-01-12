@@ -74,13 +74,8 @@ form.addEventListener("submit", function(event) {
             result += 1;
         }
     };
-    btn1.remove();
-    var div2 = document.createElement('div');
-    div2.innerText = "Result: " + result.toString();
-    div2.className = "res";
-
-    section.appendChild(div2);
-    
+    form.reset();
+    location.href = 'result.html?res=' + result.toString();
     event.preventDefault();
 }, false);
 

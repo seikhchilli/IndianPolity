@@ -60,6 +60,17 @@ section{
     color: white;
 }
 
+main{
+    width: auto;
+    height: 10vh;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #FAB685, #E58947);
+    color: white;
+    padding-top: 3vh;
+}
+
 
 @media only screen and (max-width: 1000px){
 
