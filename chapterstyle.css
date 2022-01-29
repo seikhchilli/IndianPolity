@@ -72,7 +72,8 @@ main{
 }
 
 td{
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 
