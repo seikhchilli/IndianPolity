@@ -76,6 +76,10 @@ td{
     padding-right: 2vw;
 }
 
+form{
+    line-height: 4vh;
+}
+
 
 @media only screen and (max-width: 1000px){
 

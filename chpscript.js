@@ -35,7 +35,7 @@ function populateOl(obj){
         const li = document.createElement('li');
 
         const p = document.createElement('p');
-        p.innerHTML = chp[i]['q'].join('<br><br>');
+        p.innerHTML = chp[i]['q'].join('<br>');
 
         li.appendChild(p);
         for(let j = 0; j < 4; j++){
