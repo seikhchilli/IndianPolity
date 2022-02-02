@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
     background-image: url("indianConstitution2.jpg");
-    
+    background-attachment: fixed;
 }
 
 .maincnt{
@@ -42,7 +42,7 @@ input[type=radio] {
 
 section{
     width: auto;
-    height: 15vh;
+    height: 20vh;
     background-image: linear-gradient(to right, #565D67, #26292E);
     display: flex;
     justify-content: center;

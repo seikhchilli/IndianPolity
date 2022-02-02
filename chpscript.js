@@ -75,7 +75,7 @@ form.addEventListener("submit", function(event) {
         }
     };
     form.reset();
-    location.href = 'result.html?res=' + result.toString();
+    location.href = 'result.html?res=' + result.toString() + '/' + (ques.length).toString();
     event.preventDefault();
 }, false);
 
